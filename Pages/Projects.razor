@@ -1,0 +1,55 @@
+﻿@page "/projects"
+@inject HttpClient _client
+
+<div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach(var project in projects)
+        {
+            <div class="col">
+                <div class="card text-white bg-dark border border-warning m-2 h-100">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center mb-3">@project.ProjectName</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            @foreach (var tag in @project.SkillTags.Split(','))
+                            {
+                                <span class="badge bg-primary rounded-pill m-1">+ @tag</span>
+                            }
+                        </h6>
+                        <p class="card-text">@project.ProjectDescription</p>
+                        <a href="/projects/@project.ProjectId" class="btn btn-info action-button">
+                            <i class="fa-solid fa-binoculars me-2"></i>
+                            View
+                        </a>
+                        @if(project.IsPersonalProject)
+                        {
+                            <a class="btn btn-info action-button ms-2" href="@project.GitHubRepoUrl" role="button">
+                                <i class="fab fa-github me-2"></i>
+                                GitHub
+                            </a>
+                            <div class="d-flex justify-content-end">
+                                <span class="badge bg-success rounded-pill m-1">Personal</span>
+                            </div>
+                        }
+                        else
+                        {
+                             <div class="d-flex justify-content-end">
+                                <span class="badge bg-danger rounded-pill m-1">Company</span>
+                                <span class="badge bg-danger rounded-pill m-1">@project.CompanyName</span>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<ProjectDetailModel> projects = new();
+
+    protected async override Task OnInitializedAsync()
+    {
+        var portfolio = await _client.GetFromJsonAsync<PortfolioModel>("Portfolio.json");
+        projects = portfolio?.ProjectDetailModel?? new();
+    }
+}

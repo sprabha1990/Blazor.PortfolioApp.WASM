@@ -23,5 +23,62 @@
         "testimonal": " Sugumar was continuing to do the great level of work exhibition and has a good amount of understanding in technologies like C#, WPF, ReactJS, Javascript, etc. Always focused on his task & delivered it on time. Gained more faith/confidence in all the level of peoples (Product owners, Service Technicians, Manager & Team Members). As a mentor, he used to share his skills and Knowledge to the team members. Capable of learning new skills/technologies very quickly."
       }
     ]
-  }
+  },
+  "projects": [
+    {
+      "projectId": 1,
+      "projectName": "File Encryptor",
+      "skillTags": "WPF, C# 10.0, .NET 3.0, .NET 5.0",
+      "shortDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "PersonalProject": true,
+      "githubRepoUrl": "https://github.com/sprabha1990/FileEncryptor",
+      "companyName": "",
+      "term": "",
+      "teamSize": 0,
+      "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at odio tempor, vestibulum eros quis, tempus elit. Cras id dignissim risus, at bibendum enim. Praesent eget ultrices diam. Nulla ultrices quis massa sed faucibus. Ut vestibulum urna a bibendum malesuada. Nulla suscipit ante vitae ante dignissim tempor. Proin sit amet porta nulla.:Aenean lacinia metus lectus, ut feugiat magna venenatis et. Phasellus hendrerit rhoncus sapien, nec sodales sapien ultricies sit amet. Praesent fringilla ornare neque. Etiam id nulla at nibh rutrum sollicitudin. Quisque volutpat sapien vel lorem ornare, ac sollicitudin tellus euismod. Nulla dolor sem, rhoncus nec elementum id, dapibus at metus. Morbi viverra erat non orci auctor malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut id ante cursus, feugiat dui a, varius lectus. Nullam nisi ipsum, faucibus a rutrum eu, euismod a justo. Curabitur ac pharetra lectus. Nullam lorem felis, tempus ac nisi sed, sollicitudin tempor elit. Aliquam ut eros sapien. Nulla eget nunc felis.:Pellentesque eget accumsan diam, at accumsan nunc. Mauris et eros nisi. Pellentesque faucibus turpis ante, eu egestas ex pretium in. Sed vitae magna efficitur, auctor ipsum quis, rhoncus urna. Sed malesuada, velit nec suscipit aliquam, arcu odio dignissim elit, in consequat ante neque sed nibh. Integer risus metus, pulvinar eu ipsum in, eleifend consequat sem. Pellentesque nulla est, vulputate ac nisi id, porta maximus ligula. Vestibulum dapibus, eros sed consequat posuere, erat purus vestibulum arcu, eget tempor libero velit fermentum arcu.:Donec vehicula, lectus faucibus venenatis commodo, ante tortor mattis lectus, in dignissim augue nisi vel libero. Cras vestibulum ipsum vel risus rutrum semper. Donec mollis pretium diam, eu tincidunt lectus. Sed vitae velit quis ante iaculis pretium quis ut purus. Duis gravida erat ut turpis placerat sollicitudin. Fusce tincidunt luctus ante, id molestie sem euismod et. Nulla facilisi.:Duis sit amet diam luctus, volutpat arcu eu, pharetra ligula. Duis suscipit, magna quis dignissim placerat, nunc ligula tempor libero, quis lobortis lacus tellus nec est. Fusce pulvinar, nisl ut tempor consequat, mauris purus sodales ex, tristique efficitur felis ligula consequat sapien. Nunc ac consequat odio. Nam vitae justo rhoncus, rutrum dolor nec, dictum odio. Nunc tristique nibh scelerisque, efficitur lectus et, varius tellus. Vivamus gravida urna at ligula scelerisque malesuada. Sed nec urna dapibus, tincidunt odio quis, fermentum massa.",
+      "techTools": "WPF, C#10.0, DotNet6.0, MVVM, Cryptograpghy, VS2022, Git, Symetric Encryption",
+      "rolesResp": [
+        {
+          "roleColor": "success",
+          "roleName": "Owner"
+        }
+      ]
+    },
+    {
+      "projectId": 2,
+      "projectName": "Blazor Training",
+      "skillTags": "C# 11.0, .NET 6.0, .NET 7.0",
+      "shortDescription": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)",
+      "PersonalProject": false,
+      "githubRepoUrl": "",
+      "companyName": "Trimble",
+      "term": "2016 to Present",
+      "teamSize": 5,
+      "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at odio tempor, vestibulum eros quis, tempus elit. Cras id dignissim risus, at bibendum enim. Praesent eget ultrices diam. Nulla ultrices quis massa sed faucibus. Ut vestibulum urna a bibendum malesuada. Nulla suscipit ante vitae ante dignissim tempor. Proin sit amet porta nulla.:Aenean lacinia metus lectus, ut feugiat magna venenatis et. Phasellus hendrerit rhoncus sapien, nec sodales sapien ultricies sit amet. Praesent fringilla ornare neque. Etiam id nulla at nibh rutrum sollicitudin. Quisque volutpat sapien vel lorem ornare, ac sollicitudin tellus euismod. Nulla dolor sem, rhoncus nec elementum id, dapibus at metus. Morbi viverra erat non orci auctor malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut id ante cursus, feugiat dui a, varius lectus. Nullam nisi ipsum, faucibus a rutrum eu, euismod a justo. Curabitur ac pharetra lectus. Nullam lorem felis, tempus ac nisi sed, sollicitudin tempor elit. Aliquam ut eros sapien. Nulla eget nunc felis.:Pellentesque eget accumsan diam, at accumsan nunc. Mauris et eros nisi. Pellentesque faucibus turpis ante, eu egestas ex pretium in. Sed vitae magna efficitur, auctor ipsum quis, rhoncus urna. Sed malesuada, velit nec suscipit aliquam, arcu odio dignissim elit, in consequat ante neque sed nibh. Integer risus metus, pulvinar eu ipsum in, eleifend consequat sem. Pellentesque nulla est, vulputate ac nisi id, porta maximus ligula. Vestibulum dapibus, eros sed consequat posuere, erat purus vestibulum arcu, eget tempor libero velit fermentum arcu.:Donec vehicula, lectus faucibus venenatis commodo, ante tortor mattis lectus, in dignissim augue nisi vel libero. Cras vestibulum ipsum vel risus rutrum semper. Donec mollis pretium diam, eu tincidunt lectus. Sed vitae velit quis ante iaculis pretium quis ut purus. Duis gravida erat ut turpis placerat sollicitudin. Fusce tincidunt luctus ante, id molestie sem euismod et. Nulla facilisi.:Duis sit amet diam luctus, volutpat arcu eu, pharetra ligula. Duis suscipit, magna quis dignissim placerat, nunc ligula tempor libero, quis lobortis lacus tellus nec est. Fusce pulvinar, nisl ut tempor consequat, mauris purus sodales ex, tristique efficitur felis ligula consequat sapien. Nunc ac consequat odio. Nam vitae justo rhoncus, rutrum dolor nec, dictum odio. Nunc tristique nibh scelerisque, efficitur lectus et, varius tellus. Vivamus gravida urna at ligula scelerisque malesuada. Sed nec urna dapibus, tincidunt odio quis, fermentum massa.",
+      "techTools": "Blazor, C#11.0, DotNet6.0, DotNet7.0, VS2022, Git, Bootstrap 5.0, Asp Net Core Web Api, cloudflare, ci-cd",
+      "rolesResp": [
+        {
+          "roleColor": "success",
+          "roleName": "bug-fix"
+        },
+        {
+          "roleColor": "success",
+          "roleName": "feature-enhancement"
+        },
+        {
+          "roleColor": "info",
+          "roleName": "mentor"
+        },
+        {
+          "roleColor": "danger",
+          "roleName": "design-architect"
+        },
+
+        {
+          "roleColor": "warning",
+          "roleName": "devops"
+        }
+      ]
+    }
+  ]
 }

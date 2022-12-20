@@ -1,0 +1,60 @@
+﻿@page "/projects/{projectId:int}"
+@inject HttpClient _client
+
+<div class="container">
+    <h2 class="d-flex justify-content-center mb-2 mt-2">@project.ProjectName</h2>
+    @if(false == project.IsPersonalProject)
+    {
+          <dl class="row  shadow-sm p-3 mb-3 bg-body">
+            <dt class="col-sm-2">Company Name</dt>
+            <dd class="col-sm-9 text-success">@project.CompanyName</dd>
+
+            <dt class="col-sm-2">Term</dt>
+            <dd class="col-sm-9">
+                @project.Term
+            </dd>
+            <dt class="col-sm-2">Team Size</dt>
+            <dd class="col-sm-9">@project.TeamSize</dd>
+         </dl>
+    }
+
+    <div>
+        <div class="row">
+            <div class="col text-center shadow p-3 mb-2 mt-2 bg-body">
+                @foreach(var para in project.CompleteDescription.Split(":"))
+                {
+                    <p>@para</p>    
+                }
+            </div>
+        </div>
+        <div class="row">
+            <div class="col  shadow p-3 m-1 bg-body">
+                <p><u><strong>Tools and Technologies Used</strong></u></p>
+                @foreach(var tooltag in project.ToolUsed.Split(","))
+                {
+                    <span class="badge bg-primary rounded-pill m-1">+ @tooltag</span>
+                }
+            </div>
+            <div class="col  shadow p-3 m-1 bg-body">
+                <p><u><strong>Roles & Responsibilities</strong></u></p>
+                @foreach(var role in project.RolesAndResp)
+                {
+                    <span class="badge bg-@role.RoleColor rounded-pill m-1">+ @role.RoleName</span>    
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public int projectId { get; set; }
+
+    private ProjectDetailModel project = new();
+
+    protected async override Task OnInitializedAsync()
+    {
+        var portfolio = await _client.GetFromJsonAsync<PortfolioModel>("Portfolio.json");
+        project = portfolio?.ProjectDetailModel?.FirstOrDefault(x => x.ProjectId == projectId) ?? new();
+    }
+}
