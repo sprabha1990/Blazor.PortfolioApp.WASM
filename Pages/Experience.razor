@@ -1,0 +1,41 @@
+﻿@page "/experience"
+@inject HttpClient _client
+
+<div class="container py-5">
+    <div class="main-timeline-2">
+
+        @foreach(var exp in experiances)
+        {
+            <div class="timeline-2 @(experiances.IndexOf(exp)%2 ==0 ? "left" : "right")-2">
+                <div class="card">
+                    <div class="card-body bg-dark text-white rounded p-4">
+                        <div class="d-flex align-items-center">
+                            <h4 class="fw-bold mb-4">@exp.CompanyName</h4>
+                            <p class="text-warning mb-4 ms-4"><small>[ @exp.FullTerm ]</small></p>
+                        </div>
+                        <p class="mb-2">
+                           @exp.Description
+                        </p>
+                        <p class="d-flex justify-content-start text-danger"> <u>Designations</u></p>
+                        <dl class="row ms-3">
+                            @foreach(var designation in exp.Designations)
+                            {
+                                <dt class="col-sm-5">@designation.DesignationName</dt>
+                                <dd class="col-sm-5 text-white"><i class="fa-regular fa-clock text-success me-2"></i>@designation.DesignationTerm</dd>
+                            }
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<ExperienceModel> experiances = new();
+    protected async override Task OnInitializedAsync()
+    {
+        var portfolio = await _client.GetFromJsonAsync<PortfolioModel>("Portfolio.json");
+        experiances = portfolio?.ExperienceModel ?? new();
+    }
+}

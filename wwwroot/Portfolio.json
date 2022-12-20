@@ -80,5 +80,52 @@
         }
       ]
     }
+  ],
+  "experiences": [
+    {
+      "companyName": "Company1",
+      "fullTerm": "3y+9m",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "designations": [
+        {
+          "designationName": "designation1",
+          "designationTerm": "2022-2022"
+        },
+        {
+          "designationName": "designation2",
+          "designationTerm": "2022-2022"
+        }
+      ]
+    },
+    {
+      "companyName": "Company2",
+      "fullTerm": "10m",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "designations": [
+        {
+          "designationName": "designation1",
+          "designationTerm": "2022-2022"
+        },
+        {
+          "designationName": "designation2",
+          "designationTerm": "2022-2022"
+        }
+      ]
+    },
+    {
+      "companyName": "Company3",
+      "fullTerm": "10m",
+      "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "designations": [
+        {
+          "designationName": "designation1",
+          "designationTerm": "2022-2022"
+        },
+        {
+          "designationName": "designation2",
+          "designationTerm": "2022-2022"
+        }
+      ]
+    }
   ]
 }

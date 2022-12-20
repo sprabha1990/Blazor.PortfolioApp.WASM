@@ -9,5 +9,8 @@ namespace BlazorApp.Bootstrap5.Models
 
         [JsonPropertyName("projects")]
         public List<ProjectDetailModel> ProjectDetailModel { get; set; } = new();
+
+        [JsonPropertyName("experiences")]
+        public List<ExperienceModel> ExperienceModel { get; set; } = new();
     }
 }
