@@ -15,7 +15,17 @@
             </dd>
             <dt class="col-sm-2">Team Size</dt>
             <dd class="col-sm-9">@project.TeamSize</dd>
-         </dl>
+
+            <dt class="col-sm-2">Source</dt>
+            <dd class="col-sm-9 text-danger">Confidential</dd>
+        </dl>
+    }
+    else
+    {
+        <dl class="row  shadow-sm p-3 mb-3 bg-body">
+            <dt class="col-sm-2">Source</dt>
+            <dd class="col-sm-9 text-info"><a href="@project.GitHubRepoUrl">@project.GitHubRepoUrl</a></dd>
+        </dl>
     }
 
     <div>

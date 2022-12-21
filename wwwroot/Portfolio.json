@@ -127,5 +127,37 @@
         }
       ]
     }
+  ],
+  "posts": [
+    {
+      "postTitle": "Post Title 1",
+      "publishedDate": "Nov 5, 2021",
+      "shortDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et purus velit. Mauris ut tincidunt velit, imperdiet vehicula nisi. Fusce eu dui et leo dignissim imperdiet quis nec enim. Fusce tincidunt lobortis felis, eget semper odio tempus ac. Mauris ac mauris at arcu ullamcorper bibendum. Quisque facilisis imperdiet sem, ullamcorper lobortis quam facilisis ut. Praesent non ex eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;",
+      "postUrl": "https://dev.to/sprabha1990/data-streaming-in-net-6-using-kafka-3dd",
+      "likesCount": 0,
+      "commentCount": 0,
+      "bookmarkCount": 0,
+      "tags": "dotnet6, tag2"
+    },
+    {
+      "postTitle": "Post Title 2",
+      "publishedDate": "Nov 20, 2021",
+      "shortDesc": "Ut lacinia odio vel vulputate suscipit. Sed in lectus at sem commodo rutrum eget non lacus. Donec a ex eu eros eleifend tincidunt eget non magna. Donec eleifend facilisis sagittis. Vestibulum eu efficitur libero. Praesent tempor, nibh id facilisis tristique, dui dolor vehicula metus, at semper tellus diam eget purus. Aenean pellentesque libero mi. Nullam hendrerit volutpat metus, ac rhoncus enim auctor id. Suspendisse et erat lacus.",
+      "postUrl": "https://dev.to/sprabha1990/data-streaming-in-net-6-using-kafka-3dd",
+      "likesCount": 0,
+      "commentCount": 3,
+      "bookmarkCount": 2,
+      "tags": "dotnet6, tag2"
+    },
+    {
+      "postTitle": "Post Title 3",
+      "publishedDate": "Nov 29, 2021",
+      "shortDesc": "Sed non bibendum lorem. Ut lacinia massa eu est molestie feugiat in vel metus. Duis non dolor urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum sit amet nisi laoreet, fermentum odio id, varius tellus. Integer ut libero eget urna maximus aliquam. Morbi auctor congue enim. In pharetra nibh at dui auctor tempor. Proin sed augue at neque ullamcorper porta. Nullam id est dui. Phasellus at nisl volutpat, suscipit nibh eu, mattis enim. Morbi ornare arcu a est luctus, ac finibus ligula sodales. Etiam rhoncus feugiat interdum.",
+      "postUrl": "https://dev.to/sprabha1990/data-streaming-in-net-6-using-kafka-3dd",
+      "likesCount": 10,
+      "commentCount": 1,
+      "bookmarkCount": 5,
+      "tags": "dotnet6, tag2"
+    }
   ]
 }

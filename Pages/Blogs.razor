@@ -1,0 +1,44 @@
+﻿@page "/posts"
+@inject HttpClient _client
+
+<div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        @foreach(var post in posts)
+        {
+            <div class="col">
+                <a href="@post.PostUrl" class="card text-white bg-dark border border-warning m-2 h-100">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex justify-content-center mb-3"><strong>@post.PostTitle</strong></h5>
+                        <h6 class="card-subtitle mb-2 text-warning"><small><em>Published: @post.PublishedDate</em></small></h6>
+                        <p class="card-text">@post.PostContent</p>
+                        <div class="d-flex row">
+                            <div class="col-md-9">
+                                <small><i class="fa-solid fa-heart text-danger"></i> @post.LikesCount </small>
+                                <small class="ms-3"><i class="fa-solid fa-comments text-info"></i> @post.CommentCount </small>
+                                <small class="ms-3"><i class="fa-solid fa-bookmark text-success"></i> @post.BookmarkCount </small>
+                            </div>
+                            <div class="d-flex justify-content-end col-md-3">
+                                @foreach(var tooltag in @post.Tags.Split(","))
+                                {
+                                    <span class="badge bg-primary rounded-pill m-1">+ @tooltag</span>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+@code {
+    private List<PostsModel> posts = new();
+
+    protected async override Task OnInitializedAsync()
+    {
+        var portfolio = await _client.GetFromJsonAsync<PortfolioModel>("Portfolio.json");
+        posts = portfolio?.PostsModel ?? new();
+    }
+}
