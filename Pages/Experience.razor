@@ -1,5 +1,6 @@
 ﻿@page "/experience"
 @inject HttpClient _client
+@inject NavigationManager NavManager
 
 <div class="container py-5">
     <div class="main-timeline-2">
@@ -32,9 +33,15 @@
 
 @code {
     private List<ExperienceModel> experiances = new();
-    protected async override Task OnInitializedAsync()
+
+    protected override void OnInitialized()
     {
-        var portfolio = await _client.GetFromJsonAsync<PortfolioModel>("Portfolio.json");
-        experiances = portfolio?.ExperienceModel ?? new();
+        NavManager.NavigateTo("/development-in-progress");
     }
+
+    //protected async override Task OnInitializedAsync()
+    //{
+    //    var portfolio = await _client.GetFromJsonAsync<PortfolioModel>("Portfolio.json");
+    //    experiances = portfolio?.ExperienceModel ?? new();
+    //}
 }
