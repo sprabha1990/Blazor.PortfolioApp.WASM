@@ -1,6 +1,6 @@
 ﻿@page "/posts"
 @inject HttpClient _client
-
+@inject NavigationManager NavManager
 <div class="container-fluid">
     <div class="row row-cols-1 row-cols-md-2 g-4">
         @foreach(var post in posts)
@@ -38,6 +38,9 @@
 
     protected async override Task OnInitializedAsync()
     {
+        NavManager.NavigateTo("/development-in-progress");
+        return;
+
         var portfolio = await _client.GetFromJsonAsync<PortfolioModel>("Portfolio.json");
         posts = portfolio?.PostsModel ?? new();
     }

@@ -2,24 +2,24 @@
   "aboutme": {
     "testimonals": [
       {
-        "photo": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp",
+        "photo": "/images/Seth.jpg",
         "backColor": " #9d789b;",
-        "name": "Test User 1",
-        "designation": "Manager at Trimble",
+        "name": "Seth Moore",
+        "designation": "Worldwide service provider program manager at Trimble Inc",
         "testimonal": "I had the pleasure of working with Sugumar on our Atlas service repair software for a year and a half. He was a senior software engineer when I came on to the team as project manager. He was pivotal to our team. Some of the product's most complex features were lead by Sugumar. He has an excellent ability to engage the business and assess their requirements for stories and project milestones. He is very analytical and can present business risks preemptively before development efforts take place, saving time and investment. Excellent team member who works well with others. Brings creativity, ambition, and exciting new ideas to the business. "
       },
       {
-        "photo": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp",
+        "photo": "/images/Karthik.jpg",
         "backColor": "#7a81a8;",
-        "name": "Test User 2",
-        "designation": "Manager at Trimble",
+        "name": "Karthik Nallasamy",
+        "designation": "Senior Software Engineer at Razer Inc",
         "testimonal": " Sugumar is very good and he has good technologies skills. He is very talent in completing tasks and handling escalation from customer. I worked with him closely and he completed his all task in time with good quality. He is smart worker."
       },
       {
-        "photo": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp",
+        "photo": "/images/Raja.jpg",
         "backColor": "#6d5b98;",
-        "name": "Test User 3",
-        "designation": "Manager at Trimble",
+        "name": "Rajasekar Nammalvar",
+        "designation": "Technical Project Manager at Trimble Inc",
         "testimonal": " Sugumar was continuing to do the great level of work exhibition and has a good amount of understanding in technologies like C#, WPF, ReactJS, Javascript, etc. Always focused on his task & delivered it on time. Gained more faith/confidence in all the level of peoples (Product owners, Service Technicians, Manager & Team Members). As a mentor, he used to share his skills and Knowledge to the team members. Capable of learning new skills/technologies very quickly."
       }
     ]

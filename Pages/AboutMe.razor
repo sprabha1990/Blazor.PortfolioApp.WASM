@@ -1,4 +1,4 @@
-﻿@page "/aboutme"
+﻿@page "/"
 @inject HttpClient _client
 
 <div class="container-fluid" style="margin-bottom: 5rem">
@@ -9,34 +9,27 @@
             </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <h5 class="card-title"><strong>Sugumar Prabhakar</strong></h5>
+            <p class="card-text">Software coder who loves to develop full stack applications from scratch also loves to travel round the world. </p>
+                    <p class="card-text"><small class="text-muted">Full Stack Developer | .NET | Microsoft-certified | AWS | System Engineering | Docker | Blazor | React JS | Traveller | Nature Lover | Chef at Home</small></p>
             <div class="row">
                 <div class="col d-flex justify-content-center align-items-center">
-                       <button type="button" class="btn btn-outline-danger col-sm-4 col-md-2"><i class="fa-sharp fa-solid fa-file me-3"></i>Download</button>
+                            <a href="https://icedrive.net/s/h1kPb1SY3vhZk3DDA3ayVy23zGvD" target="_blank" class="btn btn-outline-danger col-sm-4 col-md-2"><i class="fa-sharp fa-solid fa-file me-3"></i>Download</a>
                             <div class="container p-4 pb-0">
                                 <!-- Section: Social media -->
                                 <section class="mb-4">
-                                    <!-- Twitter -->
-                                    <a class="btn text-white btn-floating m-1"
-                                       style="background-color: #55acee;"
-                                       href="#!"
-                                       role="button">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-
                                     <!-- Linkedin -->
                                     <a class="btn text-white btn-floating m-1"
                                        style="background-color: #0082ca;"
-                                       href="#!"
+                                       href="https://www.linkedin.com/in/sugumar-prabhakar-450b03a4/"
                                        role="button">
                                         <i class="fab fa-linkedin-in"></i>
                                     </a>
                                     <!-- Github -->
                                     <a class="btn text-white btn-floating m-1"
                                        style="background-color: #333333;"
-                                       href="#!"
+                                       title="My Personal Projects"
+                                       href="https://github.com/sprabha1990"
                                        role="button">
                                         <i class="fab fa-github"></i>
                                     </a>
@@ -44,7 +37,8 @@
                                     <!-- Dev.Io -->
                                     <a class="btn text-white btn-floating m-1"
                                        style="background-color: #333333;"
-                                       href="#!"
+                                       title="My Posts"
+                                       href="https://dev.to/sprabha1990"
                                        role="button">
                                         <i class="fab fa-dev"></i>
                                     </a>
@@ -62,52 +56,153 @@
         <div class="card about-me-details col text-start">
             <div class="card-body">
                 <div class="row">
-                    <p class="mb-1">
-                        A passionate Microsoft-certified professional having 11+ years of experience in the software industry, extensively in developing full-stack applications from frontend UI-based applications to the web API services that connect with the backend databases. Though I worked primarily in software application development, I also have experience in Dockers and AWS CICD pipelines for deploying applications and APIs as microservices.
-                        As a software engineer, the following are the main areas where I have predominant experience.
+                    <p class="mb-4">
+                        A passionate Microsoft-Certified full stack developer having <strong>11+</strong> years of experience in the software industry. I have worked in almost all the layers of the software development process in these 11+ years. i.e., from requirements gathering to software testing to software releases. This includes architectural design of the software pieces and development of the same, writing unit, integration and automation test case if applicable.
                     </p>
-                    <p class="mt-2"><mark class="bg-success text-white">FRONT-END</mark></p>
-                    <p class="ms-5">Major experience in developing windows-based client applications using <mark>WPF</mark> Framework.</p>
-                    <p class ="ms-5">Couple of years of experience in developing SPA applications using <mark>React JS</mark>.</p>
-                    <p class="mt-2"><mark class="bg-success text-white">BACK-END</mark></p>
-                    <p class="ms-5">5+ years of experience in creating and maintaining ASP .Net Core Web API services</p>
-                    <p class="ms-5">Couple of years of experience in creating microservices and deploying it as docker container images.</p>
-                   
-                </div>
-                <div class="row d-flex justify-content-center mt-3 shadow-sm p-3 mb-5 bg-body rounded">
-                    <div class="col-md-1 col-sm-2 text-center">
-                        <i class="devicon-csharp-plain-wordmark colored skill-icon" title="C# 11.0 (latest)"></i>
-                    </div>
-                    <div class="col-md-1 col-sm-2 text-center">
-                        <i class="fa-brands fa-aws skill-icon" title="Services like ECS, ECR, S3, DynamoDB, ALB, VPC, CodePipeline & other dev tools etc"></i>
-                    </div>
-                    <div class="col-md-1 col-sm-2 text-center">
-                        <i class="devicon-dotnetcore-plain colored skill-icon" title=".NET 6.0"></i>
-                    </div>
-                    <div class="col-md-1 col-sm-2 text-center">
-                        <i class="devicon-docker-plain-wordmark colored skill-icon" title=""></i>
-                    </div>
-                    <div class="col-md-1 col-sm-2 text-center">
-                        <i class="devicon-bitbucket-original-wordmark colored skill-icon"></i>
-                    </div>
-                    <div class="col-md-1 col-sm-2 text-center">
-                        <i class="devicon-git-plain-wordmark colored skill-icon"></i>
-                    </div>
-                    <div class="col-md-1 col-sm-2 text-center">
-                        <i class="fa-solid fa-database skill-icon" title="SQL, DynamoDB & Sqlite"></i>
-                    </div>
-                    <div class="col-md-1 col-sm-2 text-center">
-                        <i class="devicon-visualstudio-plain colored skill-icon" title="Visual Studio 2022 & VS Code"></i>
-                    </div>
-                    <div class="col-md-1 col-sm-2 text-center">
-                        <img src="images/cicd.png" class="img-fluid rounded-start" alt="CICD" title="AWS CICD Code Pipeline"/>
-                    </div>
+                    <p class="mb-4">
+                        As a software professional for more than a decade, the following are the areas where I'm hands on experienced so far.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4" >
+                            <dl class="row">
+                                <dt class="col-sm-4">Frameworks</dt>
+                                <dd class="col-sm-8">
+                                    <small>- .NET Framework (4.0 to 4.8)</small>
+                                    <br />
+                                    <small>- <mark class="bg-success text-white rounded">.NET Core (1.0 to 7.0)</mark></small>
+                                </dd>
+                                <dt class="col-sm-4">Frontend</dt>
+                                <dd class="col-sm-8">
+                                    <small>- <mark class="bg-success text-white rounded">WPF MVVM</mark>)</small>
+                                    <br />
+                                    <small>- React JS</small>
+                                    <br />
+                                    <small>- <mark class="bg-success text-white rounded">Blazor</mark></small>
+                                    <br />
+                                    <small>- Bootstrap v5</small>
+                                    <br />
+                                    <small>- Material Design</small>
+                                </dd>
+                                <dt class="col-sm-4">Backend</dt>
+                                <dd class="col-sm-8">
+                                    <small>- <mark class="bg-success text-white rounded">C#</mark></small>
+                                    <br />
+                                    <small>- Python</small>
+                                    <br />
+                                    <small>- Javascript</small>
+                                </dd>
+                                <dt class="col-sm-4">Databases</dt>
+                                <dd class="col-sm-8">
+                                    <small>- <mark class="bg-success text-white rounded">SQL</mark></small>
+                                    <br />
+                                    <small>- <mark class="bg-success text-white rounded">Dynamo DB</mark></small>
+                                    <br />
+                                    <small>- Mongo DB</small>
+                                    <br />
+                                    <small>- SQLite</small>
+                                </dd>
+                                <dt class="col-sm-4">Version Control/Build Tools</dt>
+                                <dd class="col-sm-8">
+                                    <small>- <mark class="bg-success text-white rounded">Git</mark> </small>
+                                    <br />
+                                    <small>- SVN</small>
+                                    <br />
+                                    <small>- Azure TFS</small>
+                                    <br />
+                                    <small>- AWS Code Commit</small>
+                                    <br />
+                                    <small>- <mark class="bg-success text-white rounded">Bitbucket</mark> </small>
+                                    <br />
+                                    <small>- GitHub</small>
+                                </dd>
+                                <dt class="col-sm-4">Public Cloud</dt>
+                                <dd class="col-sm-8">
+                                    <small>- <mark class="bg-success text-white rounded">AWS</mark> </small>
+                                    <br />
+                                    <small>- Azure</small>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="col-md-4">
+                            <dl class="row">
+                                <dt class="col-sm-4">AWS</dt>
+                                <dd class="col-sm-8">
+                                    <small>- <mark class="bg-success text-white rounded">CI/CD Code Pipelines</mark></small>
+                                    <br />
+                                    <small>- Code Commit Repository</small>
+                                    <br />
+                                    <small>- IAM</small>
+                                    <br />
+                                    <small>- <mark class="bg-success text-white rounded">Dynamo DB</mark></small>
+                                    <br />
+                                    <small>- <mark class="bg-success text-white rounded">Elastic Container Service (ECS)</mark></small>
+                                    <br />
+                                    <small>- <mark class="bg-success text-white rounded">Elastic Container Registry (ECR)</mark></small>
+                                    <br />
+                                    <small>- Elastic Beanstalk (EBS) </small>
+                                    <br />
+                                    <small>- <mark class="bg-success text-white rounded">S3</mark></small>
+                                    <br />
+                                    <small>- Cloudwatch (logs & alarms)</small>
+                                    <br />
+                                    <small>- Messaging Systems (SNS & SQS)</small>
+                                    <br />
+                                    <small>- Lambda Functions</small>
+                                    <br />
+                                    <small>- Networking (Load Balancers, VPC, Subnets, Routing, etc.)</small>
+                                    <br />
+                                    <small>- <mark class="bg-success text-white rounded">Cloud Formation</mark></small>
+                                    <br />
+                                    <small>- AWS IOT</small>
+                                </dd>
+                                <dt class="col-sm-4">Azure</dt>
+                                <dd class="col-sm-8">
+                                    <small>- CI/CD Pipelines</small>
+                                    <br />
+                                    <small>- Repository</small>
+                                    <br />
+                                    <small>- Azure Functions</small>
+                                    <br />
+                                    <small>- Cosmos DB</small>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="col-md-4 d-grid align-items-start" style="justify-items:center">
+                            <div class="col-sm-1">
+                                <i class="devicon-csharp-plain-wordmark colored skill-icon" title="C# 11.0 (latest)"></i>
+                            </div>
+                            <div class="col-sm-1">
+                                <i class="fa-brands fa-aws skill-icon" title="Services like ECS, ECR, S3, DynamoDB, ALB, VPC, CodePipeline & other dev tools etc"></i>
+                            </div>
+                            <div class="col-md-1 col-sm-2 text-center">
+                                <i class="devicon-dotnetcore-plain colored skill-icon" title=".NET 6.0"></i>
+                            </div>
+                            <div class="col-md-1 col-sm-2 text-center">
+                                <i class="devicon-docker-plain-wordmark colored skill-icon" title=""></i>
+                            </div>
+                            <div class="col-md-1 col-sm-2 text-center">
+                                <i class="devicon-bitbucket-original-wordmark colored skill-icon"></i>
+                            </div>
+                            <div class="col-md-1 col-sm-2 text-center">
+                                <i class="devicon-git-plain-wordmark colored skill-icon"></i>
+                            </div>
+                            <div class="col-md-1 col-sm-2 text-center">
+                                <i class="fa-solid fa-database skill-icon" title="SQL, DynamoDB & Sqlite"></i>
+                            </div>
+                            <div class="col-md-1 col-sm-2 text-center">
+                                <i class="devicon-visualstudio-plain colored skill-icon" title="Visual Studio 2022 & VS Code"></i>
+                            </div>
+                            <div class="col-md-1 col-sm-2 text-center">
+                                <img src="images/cicd.png" class="img-fluid rounded-start" alt="CICD" title="AWS CICD Code Pipeline" />
+                            </div>
+                        </div>
+                   </div>
                 </div>
             </div>
         </div>
     </div>
     <section class="mt-5">
-        <div class="row d-flex justify-content-center">
+       <div class="row d-flex justify-content-center">
             <div class="col-md-10 col-xl-8 text-center">
                 <h3 class="mb-4">Testimonials</h3>
                 <p class="mb-4 pb-2 mb-md-5 pb-md-0">
